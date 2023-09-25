@@ -1,0 +1,32 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+body{
+  background: linear-gradient(to left,#141e30,#243b55);
+  color: white;
+}
+
+/* For WebKit-based browsers */
+::-webkit-scrollbar {
+  width: 7px; /* Width of the scrollbar */
+  height: 6px; /* height of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #243b55; /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Rounded corners of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: darkgray; /* Color of the thumb on hover */
+}
+
+::-webkit-scrollbar-track {
+  background: #141e30; /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #243b55; /* Color of the track on hover */
+}

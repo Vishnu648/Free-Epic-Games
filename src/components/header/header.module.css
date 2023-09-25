@@ -1,0 +1,15 @@
+.headerContainer {
+    height: 62px;
+    background: linear-gradient(to right, #141e30, #243b55);
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0 30px;
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    margin-right: 20px;
+}

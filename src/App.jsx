@@ -1,20 +1,20 @@
 import React from 'react'
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import AllGames from "./components/allGames/AllGames"
 import Header from './components/header/Header'
-import Footer from './components/footer/Footer'
 import GameDetail from './components/gameDetails/GameDetails'
+import Footer from './components/footer/Footer'
 
 
 const App = () => {
   return (
     <Router>
-      <Header/>
+      <Header />
       <Routes>
-        <Route path='/' element={<AllGames/>} />
-        <Route path='/game/:id' element={<GameDetail/>}/>
+        <Route path='/' element={<AllGames />} />
+        <Route path='/game/:id' element={<GameDetail />} />
       </Routes>
-      {/* <Footer/> */}
+      <Footer />
     </Router>
   )
 }

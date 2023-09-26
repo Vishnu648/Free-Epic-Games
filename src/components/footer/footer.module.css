@@ -1,12 +1,13 @@
 .footerContainer{
-    position:absolute;
-    bottom: 0;
-    background: linear-gradient(to right, #141e30, #243b55);
-    height: 80px;
+
     width: 100%;
-    display: flex;
-    align-items: center;
+    height: 60px;
+    margin-top: 20px;
+    background: linear-gradient(to right,#141e30 , #243b55);
+    position: relative;
+    top: 1vh;
+    bottom: 0px;
+    display: grid;
     justify-content: center;
-    padding: 0 30px;
-    box-sizing: border-box;
+    align-items: center;
 }

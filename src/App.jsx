@@ -14,7 +14,7 @@ const App = () => {
         <Route path='/' element={<AllGames />} />
         <Route path='/game/:id' element={<GameDetail />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   )
 }

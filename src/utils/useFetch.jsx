@@ -31,7 +31,7 @@ const useFetch = (endpoint) => {
         fetchData();
     }, [])
 
-    return {games}
+    return games
 };
 
 export default useFetch;

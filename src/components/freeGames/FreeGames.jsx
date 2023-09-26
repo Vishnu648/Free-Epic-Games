@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const FreeGames = () => {
 
-  const { games } = useFetch("epic-free-games")
+  const games = useFetch("epic-free-games")
 
   return (
     <div className={styles.freeGamesContainer}>

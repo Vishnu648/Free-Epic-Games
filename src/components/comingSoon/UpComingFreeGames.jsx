@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const UpComingFreeGames = () => {
 
-    const {games}=useFetch("epic-free-games-coming-soon")
+    const games=useFetch("epic-free-games-coming-soon")
 
   return (
     <div className={styles.upComingFreeGame}>
@@ -35,5 +35,3 @@ const UpComingFreeGames = () => {
 }
 
 export default UpComingFreeGames
-
-// epic-free-games-coming-soon

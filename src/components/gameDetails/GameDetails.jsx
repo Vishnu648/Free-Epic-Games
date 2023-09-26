@@ -8,18 +8,22 @@ import useFetch from '../../utils/useFetch';
 const GameDetail = () => {
     const { id } = useParams();
 
-    const { games } = useFetch("epic-free-games") || useFetch("epic-free-games-coming-soon");
-
-
+    const games = useFetch("epic-free-games")
+    
+    const Cgames = useFetch("epic-free-games-coming-soon")
+    
 
     const idString = id.toString();
     const nameWithSpaces = idString.replace(/-/g, ' ');
-    const selectedGame = games.find((game) => game.name === nameWithSpaces);
+    let selectedGame = games.find((game) => game.name === nameWithSpaces);
+    if(!selectedGame)
+        selectedGame =  Cgames.find((s) => s.id === parseInt(id)) 
 
     return (
         <div className={styles.Container}>
 
             <Link to='/' className={styles.link}>Back</Link>
+            {console.log(games)}
 
             {selectedGame ? (
                 <div className={styles.detailsContainer}>

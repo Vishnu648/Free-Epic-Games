@@ -14,7 +14,7 @@ const FreeGames = () => {
           {games.map((game) => {
             const nameWithHyphens = game.name.replace(/\s+/g, '-');
             return (
-              <Link to={`/game/${nameWithHyphens}`}>
+              <Link to={`/game/${nameWithHyphens}`} key={game.name}>
               <div title={game.name} className={styles.card}>
                 <img src={game.offerImageTall} className={styles.imgCard} alt="free-game" />
                 <div className={styles.details}>

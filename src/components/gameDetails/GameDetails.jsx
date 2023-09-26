@@ -1,4 +1,4 @@
-import {useState,useEffect} from 'react';
+import React from 'react';
 import styles from './gameDetails.module.css'
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -7,26 +7,10 @@ import useFetch from '../../utils/useFetch';
 
 const GameDetail = () => {
     const { id } = useParams();
-    const [selectedGame, setSelectedGame] = useState('')
+
+    const { games } = useFetch("epic-free-games") || useFetch("epic-free-games-coming-soon");
 
 
-
-    const FindingGame = (id) => {
-        let {games} = useFetch("epic-free-games")
-        if(!foundGame)
-            {games} =  useFetch("epic-free-games-coming-soon")
-        return {games};
-    };
-
-    const loadGame = async () => {
-        const game = await FindingGame(id);
-        setSelectedGame(game);
-    };
-
-
-    useEffect(() => {
-        loadGame();
-    }, [])
 
     const idString = id.toString();
     const nameWithSpaces = idString.replace(/-/g, ' ');

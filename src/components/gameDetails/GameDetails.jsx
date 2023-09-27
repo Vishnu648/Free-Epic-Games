@@ -23,7 +23,6 @@ const GameDetail = () => {
         <div className={styles.Container}>
 
             <Link to='/' className={styles.link}>Back</Link>
-            {console.log(games)}
 
             {selectedGame ? (
                 <div className={styles.detailsContainer}>

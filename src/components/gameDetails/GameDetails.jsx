@@ -45,7 +45,7 @@ const GameDetail = () => {
 
                 </div>
             ) : (
-                <p style={{ color: 'red', margin: '50px' }}>Game not found</p>
+                <p style={{ color: 'white', margin: '50px' }}>Loading... </p>
             )}
 
 

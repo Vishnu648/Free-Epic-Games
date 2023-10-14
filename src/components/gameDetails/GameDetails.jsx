@@ -6,7 +6,7 @@ import useFetch from '../../utils/useFetch';
 
 
 const GameDetail = () => {
-    const { id } = useParams();
+   const { id } = useParams();
 
     const games = useFetch("epic-free-games")
     
@@ -17,7 +17,7 @@ const GameDetail = () => {
     const nameWithSpaces = idString.replace(/-/g, ' ');
     let selectedGame = games.find((game) => game.name === nameWithSpaces);
     if(!selectedGame)
-        selectedGame =  Cgames.find((s) => s.id === parseInt(id)) 
+        selectedGame =  Cgames.find((s) => s.name === nameWithSpaces) 
 
     return (
         <div className={styles.Container}>
